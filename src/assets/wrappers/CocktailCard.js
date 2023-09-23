@@ -29,5 +29,4 @@ const Wrapper = styled.article`
     }
   }
 `;
-
 export default Wrapper;

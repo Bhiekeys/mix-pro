@@ -20,7 +20,7 @@ export const loader =
   async ({ request }) => {
     const url = new URL(request.url);
     const searchTerm = url.searchParams.get('search') || '';
-    await queryClient.ensureQueryData(searchCocktailsQuery(searchTerm))
+    await queryClient.ensureQueryData(searchCocktailsQuery(searchTerm));
     return { searchTerm };
   };
 
